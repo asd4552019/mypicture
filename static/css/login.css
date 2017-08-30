@@ -1,0 +1,204 @@
+/*公共样式*/
+i{
+    font-style:normal
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width:100%;
+    height: 100%;
+    line-height: 1.6;
+}
+
+/*字体图标*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 登录简书 */
+.modal{
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+}
+.mask, .modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* 页面主体大框 */
+.modal .modal-content{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+/* 头部 */
+.modal .modal-header{
+    position: relative;
+    min-height: 30px;
+}
+.modal .modal-header h3{
+    display: inline-block;
+    margin-top: 15%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 关闭页面按钮 */
+.modal .modal-header .close-btn{
+    right: -10px;
+    width: 40px;
+    height: 40px;
+}
+.modal .modal-header .back-btn, .modal .modal-header .close-btn{
+    position: absolute;
+    font-size: 20px;
+    color: #969696;
+}
+
+
+/* 登录框主体部分 */
+.modal-body{
+    margin-top: 10px;
+}
+
+.modal .modal-body form .input-prepend{
+    position: relative;
+    width: 100%;
+}
+.modal .modal-body form .input-prepend i{
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    font-size: 18px;
+    color: #969696;
+}
+.modal .modal-body form .input-prepend:first-child input{
+    border-radius: 4px 4px 0 0;
+}
+.modal .modal-body form .input-prepend input{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 0;
+    padding: 2px 12px 4px 42px;
+    border: 1px solid #c8c8c8;
+    border-bottom: none;
+    border-radius: 0;
+    background-color: hsla(0,0%,71%,.1);
+    vertical-align: middle;
+    box-shadow: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.modal .modal-body form .last input{
+    border-radius: 0 0 4px 4px;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+/*设置验证码*/
+.modal .modal-body form .input-prepend .captcha{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    height: 46px;
+    width: 92px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 12px;
+    line-height: 46px;
+    text-align: center;
+    color: #b5b5b5;
+}
+
+/* 登录按钮 */
+.modal .modal-body form a {
+    margin-top: 20px;
+    padding: 12px 0;
+    width: 100%;
+    color: #fff;
+    background-color: #3194d0;
+    border-radius: 4px;
+    display: block;
+}
+
+/*更多登录选项*/
+.modal .modal-body .more-sign{
+    margin-top: 40px;
+}
+
+.modal .modal-body .more-sign h6{
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #b5b5b5;
+}
+.modal .modal-body .more-sign h6:after,
+.modal .modal-body .more-sign h6:before{
+    content: "";
+    border-top: 1px solid #b5b5b5;
+    display: block;
+    position: absolute;
+    width: 15%;
+    top: 8px;
+}
+.modal .modal-body .more-sign h6:before{
+    left:50px;
+}
+.modal .modal-body .more-sign h6:after{
+    right:50px;
+}
+
+/*其他登录方式的图标*/
+.modal .modal-body .more-sign ul{
+    margin-bottom: 30px;
+    padding: 0;
+}
+.modal .modal-body .more-sign ul li{
+    margin: 0 3px;
+    display: inline-block;
+}
+.modal .modal-body .more-sign ul a{
+    width: 48px;
+    height: 48px;
+    background-color: #eee;
+    border-radius: 50%;
+    line-height: 48px;
+    display: block;
+}
+.modal .modal-body .more-sign .qq{
+    background-color: #498ad5;
+}
+
+.modal .modal-body .more-sign .iconfont{
+    color:#fff;
+}
+.modal .modal-body .more-sign ul i{
+    font-size: 24px;
+}
+.modal .modal-body .more-sign .weibo{
+    background-color: #e05244;
+}
+.modal .modal-body .more-sign .douban{
+    background-color: #00820f;
+}

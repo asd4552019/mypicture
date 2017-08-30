@@ -1,0 +1,38 @@
+/*设置顶部导航*/
+#fixed_footer{
+  height: 66px;
+  background: #fff;
+  border-top: 1px #dedede solid;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+#fixed_footer a{
+  width: 25%;
+  float: left;
+  height: 62px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/*首页按钮样式*/
+#fixed_footer a.active{
+  color: #22a900;
+}
+#fixed_footer a i{
+  display: block;
+  margin: 7px 0 5px 0;
+  line-height: 26px;
+  font-size: 22px;
+  height: 26px;
+}
+
+.start{
+  cursor: pointer;
+}
+
+.end{
+  cursor: pointer;
+  color: #22a900;
+}

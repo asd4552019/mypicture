@@ -1,0 +1,167 @@
+/*公共样式*/
+i{
+    font-style:normal
+}
+body{
+    line-height: 1.6;
+    color: #666;
+    background: #f9f9f9;
+    max-width: 640px;
+}
+html{
+  background: #f9f9f9;
+}
+img{
+  width: 100%;
+  display: block;
+}
+a:link, a:visited, a:hover, a:active{
+  color:#666;
+}
+
+/*字体图标*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*头部开始*/
+#header{
+  background: #01b369;
+  height: 50px;
+}
+#header.fixed{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+
+/*设置返回按钮*/
+#header .goback{
+  width: 30px;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  margin-top: 3px;
+}
+#header .goback i{
+  color: #fff;
+  font-size: 24px;
+  line-height: 46px;
+}
+
+/*全部分类*/
+.header-title{
+  text-align: center;
+  width: 100%;
+  line-height: 50px;
+  display: inline-block;
+  float: left;
+  color: #fff;
+  font-size: 20px;
+}
+
+
+/*分类列表*/
+.classify-list .list{
+  line-height: 30px;
+  cursor: pointer;
+  background: #fff;
+}
+.classify-list .list  .list-con{
+  overflow: hidden;
+  border-bottom: 1px solid #eeeeed;
+  padding: 10px;
+}
+
+/*类别名字*/
+.classify-list .list  em{
+  font-size: 18px;
+  color: #666666;
+}
+
+/*类别图标*/
+.classify-list .list-left i{
+  display: inline-block;
+  margin-right: 18px;
+  line-height: 26px;
+  font-size: 22px;
+  height: 26px;
+}
+
+/*背景墙|装饰画*/
+.classify-list .list .bg_wall{
+  color: #f78989;
+}
+/*平面|广告设计*/
+.classify-list .list .design{
+  color: #59b5f9;
+}
+/*PPT模板*/
+.classify-list .list .ppt{
+  color: #71d1a6;
+}
+/*视频素材*/
+.classify-list .list .video{
+  color: #ff8b4c;
+}
+/*淘宝素材*/
+.classify-list .list .tao{
+  color: #ffa77d;
+}
+/*图标|UI设计*/
+.classify-list .list .ui{
+  color: #73b7e6;
+}
+/*CAD图库*/
+.classify-list .list .cad{
+  color: #9db5f2;
+}
+
+/*手抄报|小报*/
+.classify-list .list .model{
+  color: #ffca56;
+}
+
+
+/*右边箭头*/
+.classify-list .list-right i{
+  font-size: 24px;
+  padding: 0 10px 0 5px;
+  cursor: pointer;
+  color: #9fa0a4;
+}
+
+
+
+/*设置返回顶部的锚点*/
+#gotop{
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 6px;
+  bottom: 90px;
+  background: #01b369;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 30px;
+  display: none;
+}
+#gotop i{
+  color: #fff;
+  font-size: 22px;
+  line-height: 40px;
+}

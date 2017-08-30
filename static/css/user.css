@@ -1,0 +1,188 @@
+/*公共样式*/
+i{
+    font-style:normal
+}
+body{
+    line-height: 1.6;
+    color: #666;
+    background: #f9f9f9;
+    max-width: 640px;
+}
+html{
+  background: #f9f9f9;
+}
+img{
+  width: 100%;
+  display: block;
+}
+a:link, a:visited, a:hover, a:active{
+  color:#666;
+}
+
+/*字体图标*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* 头部开始 */
+#heading.fixed{
+  width: 100%;
+  height: 50px;
+  background: #FFF;
+  border-bottom: solid 2px #00a761;
+}
+
+/*设置logo*/
+.header-logo a{
+  display: block;
+  width: 98px;
+}
+.header-reg{
+  float: right;
+  font-size: 12px;
+  margin: 6px 0 0 0;
+  text-align: center;
+}
+.header-reg a,.go-reg a{
+  color: #090;
+}
+
+/*页面内容*/
+.main{
+  width: 100%;
+  height: 560px;
+  background: url(../images/bg.jpg) repeat-x;
+}
+.box-1000{
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*登录框*/
+.regBox{
+  width: 80%;
+  margin: 0 auto;
+}
+.login-box{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+.go-reg{
+  font-size: 12px;
+  text-align: right;
+  margin: 3px 0 13px 0;
+}
+
+/*用户名输入框*/
+.login-wrap{
+  width: 100%;
+  position: relative;
+  margin-bottom: 8px;
+  height: 40px;
+}
+
+.login-input{
+  color: #8d8d8d;
+  border: 1px #ccc solid;
+  width: 100%;
+  height: 40px;
+  line-height: 48px;
+  font-size: 15px;
+  text-indent: 10px;
+}
+
+/*记住登录状态*/
+.login-wrap span{
+  color:#333;
+  font-size: 12px;
+}
+
+/*忘记密码*/
+.login-wrap span .color_green{
+  color: #009900;
+}
+
+/*登录按钮*/
+.login-btn{
+  background: #090;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+}
+
+
+/*其他账号登录*/
+.fieldset{
+  height: 20px;
+  overflow: hidden;
+  padding: 24px 0 15px 0;
+}
+
+/*其他账号分割线*/
+.qita-login-line{
+  margin-top: 0;
+  border-top: 1px #dcded8 solid;
+  height: 15px;
+  /*border:none;*/
+}
+.qita-login-line legend{
+  text-align: center;
+  font-size:14px;
+  width:120px;
+}
+
+/*其他登录图标*/
+.qita-login{
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  padding-top: 9px;
+  text-align: center;
+}
+
+.qita-login a{
+  margin: 0 26px;
+}
+
+.qita-login a i{
+  background: url(../images/login-ico.v1.1.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  /*position: absolute;*/
+  /*left: 0;*/
+  /*top: 0;*/
+}
+.qita-login a:hover i{
+    opacity: 0.9;
+}
+.qita-login .wx i{
+  background-position: -221px -160px;
+}
+.qita-login .sina i{
+  background-position: -294px -160px;
+}
+.qita-login .ooopicqy i{
+  background-position: -367px -160px;
+}
